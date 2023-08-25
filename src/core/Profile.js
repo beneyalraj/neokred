@@ -70,7 +70,6 @@ export const Profile = () => {
 
       if (isTokenExpired()) {
         logout();
-        window.location.href = '/login';
       }
       fetchUserProfile();
     } catch (error) {
@@ -96,7 +95,7 @@ export const Profile = () => {
           </div>
           <div className="md:w-[540px] md:h-[680px]  p-6 gap-6 border rounded-lg pt-6 bg-slate-100/95">
             <div className="grid grid-cols-2">
-              <div className="pb-12 text-[#7181A1]">PROFILE</div>
+              <div className="pb-8 text-[#7181A1]">PROFILE</div>
               <div> </div>
               <div className="p-3 text-base text-[#7181A1]">Name</div>
               <div className="p-3 text-base text-[#7181A1] pr-4">
